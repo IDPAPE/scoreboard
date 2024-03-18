@@ -13,11 +13,11 @@
         defer></script>
 </head>
 
-<body class="debug">
+<body class="">
     <main class="container-fluid bg-primary-subtle">
-        <section class="row text-end">
+        <section class="row text-end py-3">
             <div class="col">
-                <button class="bg-danger btn rounded" onclick="resetScore()">Reset</button>
+                <button class="bg-danger btn rounded border-dark px-5" onclick="resetScore()">Reset</button>
             </div>
         </section>
 
@@ -44,19 +44,19 @@
             <div class="col-5 text-center">
                 <div class="row">
                     <div class="col p-3">
-                        <button class="bg-primary-subtle btn rounded border-dark" onclick="point('home', 1)">+1
+                        <button class="bg-success-subtle btn rounded border-dark px-5" onclick="point('home', 1)">+1
                             Home</button>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col p-3">
-                        <button class="bg-primary-subtle btn rounded border-dark" onclick="point('home', 3)">+3
+                        <button class="bg-success-subtle btn rounded border-dark px-5" onclick="point('home', 3)">+3
                             Home</button>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col p-3">
-                        <button class="bg-primary-subtle btn rounded border-dark" onclick="point('home', -1)">-1
+                        <button class="bg-danger-subtle btn rounded border-dark px-5" onclick="point('home', -1)">-1
                             Home</button>
                     </div>
                 </div>
@@ -64,26 +64,24 @@
             <div class="col-5 text-center">
                 <div class="row">
                     <div class="col p-3">
-                        <button class="bg-primary-subtle btn rounded border-dark" onclick="point('away', 1)">+1
+                        <button class="bg-success-subtle btn rounded border-dark px-5" onclick="point('away', 1)">+1
                             Away</button>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col p-3">
-                        <button class="bg-primary-subtle btn rounded border-dark" onclick="point('away', 3)">+3
+                        <button class="bg-success-subtle btn rounded border-dark px-5" onclick="point('away', 3)">+3
                             Away</button>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col p-3">
-                        <button class="bg-primary-subtle btn rounded border-dark" onclick="point('away', -1)">-1
+                        <button class="bg-danger-subtle btn rounded border-dark px-5" onclick="point('away', -1)">-1
                             Away</button>
                     </div>
                 </div>
             </div>
         </section>
-
-
     </main>
     <script src="app.js" defer></script>
 </body>

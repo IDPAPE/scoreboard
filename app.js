@@ -2,6 +2,8 @@ let homeScore = 0
 let awayScore = 0
 let homeTag = document.getElementById('home-tag')
 let awayTag = document.getElementById('away-tag')
+let homeScoreBoard = document.getElementById('home-score')
+let awayScoreBoard = document.getElementById('away-score')
 
 function point(team, points) {
     console.log(team);
@@ -25,10 +27,8 @@ function point(team, points) {
 }
 
 function changeScore() {
-    let homeScoreBoard = document.getElementById('home-score')
-    let awayScoreBoard = document.getElementById('away-score')
-    homeScoreBoard.innerText = homeScore
-    awayScoreBoard.innerText = awayScore
+    homeScoreBoard.innerText = `${homeScore}`
+    awayScoreBoard.innerText = `${awayScore}`
 
 }
 
