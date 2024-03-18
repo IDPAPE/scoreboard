@@ -8,10 +8,16 @@ function point(team, points) {
     console.log(points);
     if (team == 'home') {
         homeScore += points;
+        if (homeScore <= -1) {
+            homeScore = 0
+        }
         console.log(homeScore);
     }
     if (team == 'away') {
         awayScore += points;
+        if (awayScore <= -1) {
+            awayScore = 0
+        }
         console.log(awayScore);
     }
     changeScore()
