@@ -9,13 +9,65 @@
         integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="style.css">
+    <script id="debug-script" src="https://cdn.jsdelivr.net/gh/MickShannahan/style-debug@latest/debug.min.js"
+        defer></script>
 </head>
 
-<body>
-    <main container>
-        <div class="row">
+<body class="debug">
+    <main class="container-fluid bg-primary-subtle">
+        <section class=row>
+            <div class="col">
+                <button>asdf</button>
+            </div>
+        </section>
 
-        </div>
+        <section class="row justify-content-center">
+            <div class="col-5">
+                <div class="row">
+                    <h1> HOME </h1>
+                </div>
+                <div class="row">
+                    <h1> SCORE </h1>
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="row">
+                    <h1>AWAY</h1>
+                </div>
+                <div class="row">
+                    <h1>SCORE</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="row justify-content-center">
+            <div class="col-5">
+                <div class="row">
+                    <div class="col">
+                        <button>+1 Home</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button>+3 Home</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="row">
+                    <div class="col">
+                        <button>+1 Away</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button>+3 Away</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
     </main>
     <script src="app.js" defer></script>
 </body>
