@@ -1,5 +1,7 @@
 let homeScore = 0
 let awayScore = 0
+let homeTag = document.getElementById('home-tag')
+let awayTag = document.getElementById('away-tag')
 
 function point(team, points) {
     console.log(team);
@@ -11,5 +13,35 @@ function point(team, points) {
     if (team == 'away') {
         awayScore += points;
         console.log(awayScore);
+    }
+    changeScore()
+    checkWinner()
+}
+
+function changeScore() {
+    let homeScoreBoard = document.getElementById('home-score')
+    let awayScoreBoard = document.getElementById('away-score')
+    homeScoreBoard.innerText = homeScore
+    awayScoreBoard.innerText = awayScore
+
+}
+
+function resetScore() {
+    homeScore = 0
+    awayScore = 0
+    homeTag.innerText = 'HOME'
+    awayTag.innerText = 'AWAY'
+    changeScore()
+    console.log('scores were reset')
+}
+
+function checkWinner() {
+    if (homeScore >= 15) {
+        homeTag.innerText = 'WINNER!'
+        awayTag.innerText = 'LOSER:('
+    }
+    if (awayScore >= 15) {
+        homeTag.innerText = 'LOSER:('
+        awayTag.innerText = 'WINNER!'
     }
 }

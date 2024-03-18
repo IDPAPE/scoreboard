@@ -17,14 +17,14 @@
     <main class="container-fluid bg-primary-subtle">
         <section class="row text-end">
             <div class="col">
-                <button class="bg-danger btn rounded">asdf</button>
+                <button class="bg-danger btn rounded" onclick="resetScore()">Reset</button>
             </div>
         </section>
 
         <section class="row justify-content-center">
             <div class="col-5 bg-primary text-center rounded-start py-5 ps-5">
                 <div class="row">
-                    <h1> HOME </h1>
+                    <h1 id="home-tag"> HOME </h1>
                 </div>
                 <div class="row bg-primary-subtle rounded m-5 my-0 py-5">
                     <h1 id="home-score"> SCORE </h1>
@@ -32,7 +32,7 @@
             </div>
             <div class="col-5 bg-primary text-center rounded-end py-5 pe-5">
                 <div class="row">
-                    <h1>AWAY</h1>
+                    <h1 id="away-tag">AWAY</h1>
                 </div>
                 <div class="row bg-primary-subtle rounded m-5 my-0 py-5">
                     <h1 id="away-score">SCORE</h1>
